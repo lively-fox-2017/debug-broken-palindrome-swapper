@@ -1,3 +1,3 @@
 # debug-broken-palindrome-swapper
 
-https://docs.google.com/a/hacktiv8.com/document/d/15l_EV9WGdyGM9R2TERaG0JIsZGkONeGL90UrLh6vCF0/edit?usp=sharing
+https://docs.google.com/document/d/1kN6xWRHasJxaEEpbuUHWVw5gX4f5u4YByJ3qZ_iYWF8/edit?usp=sharing
