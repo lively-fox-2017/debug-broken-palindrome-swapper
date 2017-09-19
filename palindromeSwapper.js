@@ -4,8 +4,8 @@
  * @function palindromeSwapper
  * menukar 2 huruf berurutan dari n = 0 sampai n-1
  * contoh: makan => amkan, mkaan, maakn, makna
- * @param {string} str - input kata yang ingin di-swap dan dicek palindrom
- * @returns {boolean} true bila kata yang di-swap adalah palindrom
+ * @param {string} str - input kata yang ingin di-swap dan dicek palindrome
+ * @returns {boolean} true bila kata yang di-swap adalah palindrome
  */
 function palindromeSwapper(str) {
   let newStr = '';
