@@ -7,16 +7,20 @@
  */
 function palindromeSwapper(str) {
   let newStr = '';
+  if (isPalindrome(str)) return true;//ditambahakan kondisi jika palindrom maka langsung direturn tru
   for (var i = 0; i < str.length; i++) {
-    for (var j = 0; j < str.length; i++) {
+    newStr='';//newStr belum dikosongkan
+    for (var j = 0; j < str.length; j++) {//i++ diganti dengan j++
       if (i === j) {
         newStr += str[j+1];
         newStr += str[j];
+        j++;
       } else {
         newStr += str[j];
       }
-      j++;
+      //j++ tidak ditempatkan didalam if (i==j)
     }
+    //console.log('===='+newStr);
     if (isPalindrome(newStr)) return true;
   }
   return false;
@@ -28,9 +32,9 @@ function palindromeSwapper(str) {
  * @param {string} str - input kata yang dicek bila palindrom
  * @returns {boolean} true bila kata adalah palindrom
  */
-function isPalindrome(str) {
-  if (str.split('').reverse().join() === str) return console.log(true);
-  return console.log(false);
+function isPalindrome(str) {//console.log('++++++'+str.split('').reverse().join(''));
+  if (str.split('').reverse().join('') === str) return true;//joinnya tidak dikasih pemisah string
+  return false;
 }
 
 console.log(palindromeSwapper('arcecar')); // TRUE
